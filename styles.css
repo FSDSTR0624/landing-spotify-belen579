@@ -117,6 +117,8 @@ header{
 
 button{
     grid-row: span;
+    flex-direction: column;
+    box-sizing: border-box;
     
 }
 
@@ -150,11 +152,42 @@ button{
     margin: 30px 0px 20px 10px;
     font-size: 10px;
     cursor: pointer;
+   
     transition: transform 0.3s ease, background-color 0.3s ease;
 
 }
 
+.botonrosa2{
+    width: 100%;
+    display:flex;
+    flex-shrink:0;
+    align-items:center;
+    white-space:nowrap;
+    font-size:10px;
+    text-decoration:none;
+   
+  
+    background-color: #FFD2D7;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+   
+    margin: 30px 0px 20px 10px;
+    font-size: 10px;
+    cursor: pointer;
+   
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 .botonrosa:hover{
+    background-color: #FFD2D7;
+    transform: translateY(-5px); 
+
+}
+
+.botonrosa2:hover{
     background-color: #FFD2D7;
     transform: translateY(-5px); 
 
@@ -279,9 +312,9 @@ h4{
     background-size: contain;
     background-position: center end;
     justify-content: center;
-    width: 100%; /* Ajustar al ancho del contenedor padre */
-    height: 100%; /* Ajustar a la altura del contenedor padre */
-    object-fit: cover; /* Ajustar la imagen para cubrir el contenedor */
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
 }
 
 .imagenes {
@@ -289,13 +322,13 @@ h4{
 
    
     display: flex;
-    justify-content: center; /* Centrar el contenido horizontalmente */
+    justify-content: center; 
 }
 
 .imagenes ul {
-    list-style-type: none; /* Quitar puntos de lista */
-    margin: 0; /* Quitar márgenes predeterminados */
-    padding: 0; /* Quitar relleno predeterminado */
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
     display: flex; 
 }
 
@@ -350,8 +383,8 @@ aside h3{
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-    grid-template-rows: repeat(2, 480px); /* Dos filas de igual altura */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 480px); 
     gap: 10px; 
 
     max-width:11180px ;
@@ -415,11 +448,11 @@ aside h3{
 
 .a img{
     width: 74px;
-    height: 30px;
+    height: 40px;
     display: flex;
    
   padding-top: 20px;
-    max-width: 100%; 
+  
 }
 
 .premium img {
@@ -450,10 +483,10 @@ aside h3{
 
 
 .line{
-    border: none; /* Elimina el borde predeterminado */
-    height: 1px; /* Altura de la línea */
-    background-color: #ccc; /* Color de fondo de la línea */
-    margin: 5px; /* Margen superior e inferior */
+    border: none; 
+    height: 1px; 
+    background-color: #ccc; 
+    margin: 5px;
 }
 
 
@@ -461,7 +494,7 @@ aside h3{
 
 
 .botonrosa:hover {
-    background-color: #FFD2D7; /* Color más oscuro al pasar el ratón */
+    background-color: #FFD2D7; 
 }
 
 .comentario {
@@ -504,7 +537,9 @@ aside h3{
 }
 
 
-
+.a{
+    max-width: 100%; 
+}
 
 .d {
     display: none;
@@ -515,7 +550,7 @@ aside h3{
 }
 
 .e {
-    grid-column: 2 / 3; /* Coloca el elemento .e en la segunda columna */
+    grid-column: 2 / 3; 
 }
 
 
@@ -566,10 +601,10 @@ aside h3{
 
 .b img{
     width: 74px;
-    height: 30px;
+    height: 40px;
     display: flex;
    
-  padding-top: 30px;
+    padding-top: 10px;
     max-width: 100%; 
 }
 
@@ -582,7 +617,8 @@ aside h3{
 
 .b img{
     width: 74px;
-    height: 30px;
+    height: 40px;
+    
     display: flex;
   
   padding-top: 20px;
@@ -593,19 +629,18 @@ aside h3{
 
 .c ul{
     background-color: #FFD2D7;
-    width: auto; /* Ancho automático */
-    margin: 0px;
+    width: auto; 
     padding: 0;
    
     list-style-type: none;
-    position: absolute;
-    top: 0px; /* Ajusta según necesites */
-    left: 0px; /* Ajusta según necesites */
+   
+    top: 0px;
+    left: 0px; 
     font-size: 20px;
     color: black;
     font-weight: bold;
     
-    text-align: start;
+   
     border-radius: 1px;
     box-sizing: border-box;
     padding-right: 5px;
@@ -614,14 +649,21 @@ aside h3{
 
 
 
-
-.c  div>img{
+.premium  img{
     width: 74px;
-    height: 30px;
-    align-self: flex-start; /* Alinea la imagen en la parte superior */
-    max-width: 100%; 
+    display: flex;
+flex-direction: column;
+   
+   
+  
+    margin-top: 0px;
+    margin-bottom: 20px;
+  
 
 }
+
+
+
 
 
 .e ul{
@@ -646,7 +688,7 @@ aside h3{
 }
 
 
-
+/*
 
 .e img{
     width: 74px;
@@ -657,7 +699,7 @@ aside h3{
     max-width: 100%; 
     flex-direction: column;
 }
-
+*/
 
 .botonlila{
 
@@ -710,11 +752,22 @@ aside h3{
 
     margin-top: 20px;
     flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 
 }
 
+.botonyellow:hover{
+    background-color: rgb(249,200,133);
+    transform: translateY(-5px); 
+}
+
+
+
 .textoh3yellow{
    color: rgb(249,200,133);
+   justify-content: flex-start;
+
 }
 
 .parrafoc{
@@ -735,12 +788,125 @@ aside h3{
 
     margin-top: 20px;
     flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 
+}
+
+.botonazul:hover{
+    background-color: rgb(168,189,214);
+    transform: translateY(-5px); 
 }
 
 .textoazul{
     color: rgb(168,189,214);
+    justify-content: start;
 }
+
+
+.c div{
+
+    width: 200px;
+    margin-top: 0px;
+    padding: 0px;
+
+}
+
+
+.c h3{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+
+.e div{
+    width: 200px;
+}
+
+
+
+.container-preguntas {
+    max-width: 100%;
+    height: 100%;
+   
+   
+    text-align: center;
+    color:white;
+    background-color:black;
+}
+
+.container-preguntas h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+    
+}
+
+.container-preguntas p {
+    margin: 0.5em 0;
+}
+
+.container-preguntas a {
+    color: white;
+    text-decoration: underline;
+
+    text-decoration: none;
+}
+
+.container-preguntas a:hover {
+    text-decoration: underline;
+}
+
+.faq {
+    text-align: left;
+    margin: 50px 50px 50px 50px;
+}
+
+.faq details {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: -10px -10px 10px -10px;
+    padding: 10px;
+    list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq summary:after {
+    content: '\25BC';
+    float: right;
+}
+
+.faq details[open] summary:after {
+    content: '\25B2';
+}
+
+.faq p {
+    margin: 0;
+    padding: 10px 0 0 0;
+    font-size: 0.9em;
+}
+
+footer{
+    background-color: black;
+
+    margin-top: 50px;
+}
+
+
+
+
+
 
 
 
