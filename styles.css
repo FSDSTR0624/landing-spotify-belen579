@@ -97,7 +97,7 @@ header{
   z-index:auto;
 
   grid-template-columns: 50% 50%;
-  width: 450px; /* Ancho de cada columna */
+  width: 450px; 
   padding-left: 32px;
   padding-top: 56px;
   padding-right: 32px;
@@ -424,14 +424,14 @@ aside h3{
 
 .a ul{
     background-color: #FFD2D7;
-    width: auto; /* Ancho automático */
+    width: auto; 
     margin: 0px;
     padding: 0;
    
     list-style-type: none;
     position: absolute;
-    top: 0px; /* Ajusta según necesites */
-    left: 0px; /* Ajusta según necesites */
+    top: 0px; 
+    left: 0px; 
     font-size: 20px;
     color: black;
     font-weight: bold;
@@ -456,7 +456,7 @@ aside h3{
 }
 
 .premium img {
-    margin-top: 10px; /* Espacio entre el ul y la imagen */
+    margin-top: 10px; 
     overflow: hidden;
     display: flex;
    justify-content: start;
@@ -570,14 +570,14 @@ aside h3{
 
 .b ul{
     background-color: rgb(201,175,206);
-    width: auto; /* Ancho automático */
+    width: auto; 
     margin: 0px;
     padding: 0;
    
     list-style-type: none;
     position: absolute;
-    top: 0px; /* Ajusta según necesites */
-    left: 0px; /* Ajusta según necesites */
+    top: 0px; 
+    left: 0px; 
     font-size: 20px;
     color: black;
     font-weight: bold;
@@ -668,14 +668,14 @@ flex-direction: column;
 
 .e ul{
     background-color: #FFD2D7;
-    width: auto; /* Ancho automático */
+    width: auto; 
     margin: 0px;
     padding: 0;
    
     list-style-type: none;
     position: absolute;
-    top: 0px; /* Ajusta según necesites */
-    left: 0px; /* Ajusta según necesites */
+    top: 0px;
+    left: 0px; 
     font-size: 20px;
     color: black;
     font-weight: bold;
